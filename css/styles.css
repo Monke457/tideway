@@ -66,13 +66,13 @@ input.slider {
 }
 
 div.form-group {
-	padding:1vw;
+	padding-bottom:2vw;
 	width:80vw;
 	font-size: 18px;
 }
 
 form {
-    margin:2vw 0vw;
+    margin-bottom: 1vw;
 }
 
 table {
@@ -87,16 +87,20 @@ th {
 	padding-bottom:1vw;
 }
 
-th:first-child {
+th:not(:last-child) {
     border-right:2px solid;
 }
 
 td {
     padding:5px;
-    width: 50%;
+    width:40%;
 }
 
 td:first-child {
+    width:20%;
+}
+
+td:not(:last-child) {
     border-right:2px solid;
 }
 
