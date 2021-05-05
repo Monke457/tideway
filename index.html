@@ -10,27 +10,27 @@
 
 	<body>
 		<header>
-			<h1>The Thames Tideway Tunnel Project</h1>
+			<h1>London Abwasser Überlauf Berechnung</h1>
 		</header>
 		
 		<div class="bg-image"></div>
 		
 		<div class="main">
-			<h1 class="title">Total Water: <span id="total"></span> (liters per hour)</h1>
-
+			<h1 class="title">Gesamtwasser<br><span id="total"></span>(liter/Std)</h1>
+.
 			<form>
 				<div class="form-group">
 					<span>0</span>
 					<input type="range" class="slider" step="0.5" id="pop" name="pop" value="46.5">
 					<span>20</span><br>
-					<label for="pop">Population: <span id="popVal"></span> million</label>
+					<label for="pop">Bevölkerung: <span id="popVal"></span> Millionen</label>
 				</div>
 
 				<div class="form-group">
 					<span>0</span>
 					<input type="range" class="slider" id="pore" name="pore" value="64">
 					<span>100</span><br>
-					<label for="pore">Porosity (Green space): <span id="poreVal"></span>%</label>
+					<label for="pore">Porosität (Grünfläche): <span id="poreVal"></span>%</label>
 				</div>
 
 				<div class="form-group">
@@ -38,7 +38,7 @@
 					<input type="range" class="slider" step="0.2" id="rain" name="rain" value="12">
 					<span>50</span><br>
 					<label for="rain">
-						Hourly precipitation: <span id="rainVal"></span> mm <p>(<span id="rDef">Heavy Rain</span>)</p>
+						Stündlicher Niederschlag: <span id="rainVal"></span> mm <br>(<span id="rDef">Starker Regen</span>)
 					</label>
 				</div>
 			</form>
@@ -49,19 +49,19 @@
 					<th>Tideway Tunnel</th>
 				</tr>
 				<tr>
-					<td>Overflow: <span id="overB"></span></td>
-					<td>Overflow: <span id="overT"></span></td>
+					<td>Überlauf: <span id="overB"></span></td>
+					<td>Überlauf: <span id="overT">0</span></td>
 				</tr>
 				<tr>
-					<td>Stormwater: <span id="stormB"></span></td>
-					<td>Stormwater: <span id="stormT"></span></td>
+					<td>Regenwasser: <span id="stormB"></span></td>
+					<td>Regenwasser: <span id="stormT"></span></td>
 				</tr>
 				<tr>
-					<td>Wastewater: <span id="wasteB"></span></td>
-					<td>Wastewater: <span id="wasteT"></span></td>
+					<td>Abwasser: <span id="wasteB"></span></td>
+					<td>Abwasser: <span id="wasteT"></span></td>
 				</tr>
 			</table>
-			<p class="sub">Estimates based on available data</p>
+			<p class="sub">Schätzungen basieren auf verfügbaren Daten</p>
 		</div>
 		
 		<footer>

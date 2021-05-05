@@ -79,24 +79,24 @@ pore.oninput = function() {
 
 function rainLabel(n) {
     if(n < 50) {
-        rDef.innerHTML = "heavy shower";
+        rDef.innerHTML = "schwere Regenguss";
         if(n < 12) {
-            rDef.innerHTML = "very heavy rain";
+            rDef.innerHTML = "sehr starker Regen";
             if(n < 8) {
-                rDef.innerHTML = "heavy rain";
+                rDef.innerHTML = "starker Regen";
                 if(n < 4) {
-                    rDef.innerHTML = "moderate rain";
+                    rDef.innerHTML = "mässiger Regen";
                     if(n < 0.5) {
-                        rDef.innerHTML = "slight rain";
+                        rDef.innerHTML = "leichter Regen";
                         if(n == 0) {
-                            rDef.innerHTML = "no rain";
+                            rDef.innerHTML = "kein Regen";
                         }
                     }
                 }
             }
         }
     } else {
-        rDef.innerHTML = "violent shower";
+        rDef.innerHTML = "heftige Regenguss";
     }
 }
 
@@ -144,10 +144,10 @@ function display(n) {
 	len = n.toString().length;
 	suff = "";
 	if(len > 6) {
-		suff = " mil.";
+		suff = " Mio.";
 		if(len > 9) {
 			n = n/1000;
-			suff = " bil.";
+			suff = " Mia.";
 		}
 		n = (n/1000000).toFixed(2);
 	}
