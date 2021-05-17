@@ -79,7 +79,7 @@ pore.oninput = function() {
 
 function rainLabel(n) {
     if(n < 50) {
-        rDef.innerHTML = "schwere Regenguss";
+        rDef.innerHTML = "schwerer Regenguss";
         if(n < 12) {
             rDef.innerHTML = "sehr starker Regen";
             if(n < 8) {
@@ -96,7 +96,7 @@ function rainLabel(n) {
             }
         }
     } else {
-        rDef.innerHTML = "heftige Regenguss";
+        rDef.innerHTML = "heftiger Regenguss";
     }
 }
 
